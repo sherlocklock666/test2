@@ -17,6 +17,9 @@ git log：	查看提交历史（git log操作后想退出，在英文输入法�
 git add .：	添加所有文件到暂存区
 git commit -m"自己输入提交信息"：	提交暂存区的文件到本地仓库
 
+<分支管理>
+https://www.runoob.com/git/git-branch.html
+
 <git推送本地到远程github>
 两个方法
 远程先开好分支然后拉到本地
