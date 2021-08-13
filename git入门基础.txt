@@ -1,12 +1,11 @@
 <文件的4种状态>
-Untracked：	未跟踪。在文件夹中，但没有加入git库，不参与版本控制。通过“git add”状态变为“Staged”。
+Untracked：	未跟踪。在文件夹中，但没有加入git库，不参与版本控制。通过“git add .”状态变为“Staged”.
 
-Staged：	暂存状态。通过“git commit”将修改同步到库中，此时库中文件与本地文件有变为一致，文件为“Unmodify”状态。通过“git reset HEAD filename”取消暂存，文件状态为“Modified”。
+Staged：	暂存状态。通过“git commit -m"提交的消息提示"”将修改同步到库中，此时库中文件与本地文件有变为一致.
 
-（以下是对本地文件修改内容后的状态及操作）
-Unmodify：	文件已入库，未修改。版本库中文件快照内容与文件夹中完全一致。如果被修改，变为“Modified”。通过“git rm”移出版本库，变为“Untracked”。
+Unmodify：	文件已入库，未修改。版本库中文件快照内容与文件夹中完全一致。如果被修改，变为“Modified”。
 
-Modified：	文件已修改，仅仅修改，无其他操作。通过“git add”变为“Staged”状态，通过“git checkout”丢弃修改，返回“Unmodify”状态。“git checkout”即从库中取出文件，覆盖当前修改。
+Modified：	文件已修改，仅仅修改，无其他操作。通过“git add .”变为“Staged”状态.
 
 <查看文件状态>
 git status：	查看所有文件状态
@@ -17,3 +16,7 @@ git log：	查看提交历史（git log操作后想退出，在英文输入法�
 <提交命令>
 git add .：	添加所有文件到暂存区
 git commit -m"自己输入提交信息"：	提交暂存区的文件到本地仓库
+
+<git推送本地到远程github>
+两个方法
+远程先开好分支然后拉到本地
